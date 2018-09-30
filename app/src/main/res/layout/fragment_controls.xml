@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:layout_editor_absoluteY="81dp">
+
+
+	<Button
+		android:id="@+id/scope_view_button"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="16dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		android:minHeight="100dp"
+		android:text="@string/scope_view_button_text"
+		android:textAllCaps="false"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toTopOf="@+id/loop_mode_toggler_label"
+		app:layout_constraintEnd_toStartOf="@+id/cv1_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<ToggleButton
+		android:id="@+id/cv1_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="4dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginTop="8dp"
+		android:textOff="@string/cv1_button_text"
+		android:textOn="@string/cv1_button_text"
+		app:layout_constraintBottom_toTopOf="@+id/cv2_button"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_chainStyle="packed" />
+
+	<ToggleButton
+		android:id="@+id/cv2_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:layout_marginTop="4dp"
+		android:textOff="@string/cv2_button_text"
+		android:textOn="@string/cv2_button_text"
+		app:layout_constraintBottom_toTopOf="@+id/loop_mode_toggler_label"
+		app:layout_constraintEnd_toEndOf="@+id/cv1_button"
+		app:layout_constraintTop_toBottomOf="@+id/cv1_button" />
+
+
+	<TextView
+		android:id="@+id/time_mode_toggler_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/time_mode_toggler_label_text"
+		android:textColor="@android:color/black"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="@+id/loop_mode_toggler_label"
+		app:layout_constraintEnd_toEndOf="@+id/bpm_button"
+		app:layout_constraintStart_toStartOf="@+id/clock_button" />
+
+	<ToggleButton
+		android:id="@+id/clock_button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_weight="1"
+		android:textOff="@string/clock_button_text"
+		android:textOn="@string/clock_button_text"
+		app:layout_constraintEnd_toStartOf="@+id/bpm_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/bpm_button" />
+
+	<ToggleButton
+		android:id="@+id/bpm_button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_weight="1"
+		android:textOff="@string/bpm_button_text"
+		android:textOn="@string/bpm_button_text"
+		app:layout_constraintEnd_toStartOf="@+id/one_shot_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/clock_button"
+		app:layout_constraintTop_toTopOf="@+id/one_shot_button" />
+
+
+	<TextView
+		android:id="@+id/loop_mode_toggler_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/loop_mode_toggler_label_text"
+		android:textColor="@android:color/black"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/cycle_button"
+		app:layout_constraintEnd_toEndOf="@+id/cycle_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="@+id/one_shot_button"
+		app:layout_constraintTop_toBottomOf="@+id/scope_view_button" />
+
+	<ToggleButton
+		android:id="@+id/one_shot_button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_weight="1"
+		android:textOff="@string/one_shot_button_text"
+		android:textOn="@string/one_shot_button_text"
+		app:layout_constraintEnd_toStartOf="@+id/cycle_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/bpm_button"
+		app:layout_constraintTop_toTopOf="@+id/cycle_button" />
+
+	<ToggleButton
+		android:id="@+id/cycle_button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:layout_marginEnd="8dp"
+		android:layout_weight="1"
+		android:textOff="@string/cycle_button_text"
+		android:textOn="@string/cycle_button_text"
+		app:layout_constraintBottom_toTopOf="@+id/time_input_fields_label"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/one_shot_button"
+		app:layout_constraintTop_toBottomOf="@+id/loop_mode_toggler_label" />
+
+
+	<TextView
+		android:id="@+id/time_input_fields_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/time_input_fields_label_text"
+		android:textColor="@android:color/black"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/time_edittext"
+		app:layout_constraintEnd_toEndOf="@+id/time_spinner"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="@+id/time_edittext"
+		app:layout_constraintTop_toBottomOf="@+id/cycle_button" />
+
+	<EditText
+		android:id="@+id/time_edittext"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:hint="@string/time_edittext_hint"
+		android:imeOptions="actionDone"
+		android:inputType="numberDecimal"
+		app:layout_constraintBottom_toTopOf="@+id/voltage_input_fields_label"
+		app:layout_constraintEnd_toStartOf="@+id/time_spinner"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/time_input_fields_label" />
+
+	<Spinner
+		android:id="@+id/time_spinner"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginEnd="8dp"
+		app:layout_constraintBottom_toBottomOf="@+id/time_edittext"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/time_edittext"
+		app:layout_constraintTop_toTopOf="@+id/time_edittext"></Spinner>
+
+
+	<TextView
+		android:id="@+id/voltage_input_fields_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/voltage_input_fields_label_text"
+		android:textColor="@android:color/black"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/voltage_max_edittext"
+		app:layout_constraintEnd_toEndOf="@+id/v_max_unit"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="@+id/voltage_min_edittext"
+		app:layout_constraintTop_toBottomOf="@+id/time_edittext" />
+
+	<EditText
+		android:id="@+id/voltage_min_edittext"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:hint="@string/voltage_min_edittext_hint"
+		android:imeOptions="actionDone"
+		android:inputType="numberDecimal|numberSigned"
+		app:layout_constraintEnd_toStartOf="@+id/v_min_unit"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/voltage_max_edittext" />
+
+	<TextView
+		android:id="@+id/v_min_unit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/v_min_max_unit_text"
+		app:layout_constraintBaseline_toBaselineOf="@+id/voltage_min_edittext"
+		app:layout_constraintEnd_toStartOf="@+id/voltage_max_edittext"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/voltage_min_edittext" />
+
+	<EditText
+		android:id="@+id/voltage_max_edittext"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:layout_marginEnd="8dp"
+		android:hint="@string/voltage_max_edittext_hint"
+		android:imeOptions="actionDone"
+		android:inputType="numberDecimal|numberSigned"
+		app:layout_constraintBottom_toTopOf="@+id/pause_button"
+		app:layout_constraintEnd_toStartOf="@+id/v_max_unit"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/v_min_unit"
+		app:layout_constraintTop_toBottomOf="@+id/voltage_input_fields_label" />
+
+	<TextView
+		android:id="@+id/v_max_unit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="@string/v_min_max_unit_text"
+		app:layout_constraintBaseline_toBaselineOf="@+id/voltage_max_edittext"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/voltage_max_edittext" />
+
+
+	<ToggleButton
+		android:id="@+id/play_from_start_button"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_weight="1"
+		android:textOff="@string/play_from_start_button_text"
+		android:textOn="@string/play_from_start_button_text"
+		app:layout_constraintBottom_toBottomOf="@+id/play_button"
+		app:layout_constraintEnd_toStartOf="@+id/play_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/play_button" />
+
+	<ToggleButton
+		android:id="@+id/play_button"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:textOff="@string/play_button_text"
+		android:textOn="@string/play_button_text"
+		app:layout_constraintBottom_toBottomOf="@+id/pause_button"
+		app:layout_constraintEnd_toStartOf="@+id/pause_button"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/play_from_start_button"
+		app:layout_constraintTop_toTopOf="@+id/pause_button" />
+
+	<ToggleButton
+		android:id="@+id/pause_button"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_weight="1"
+		android:paddingBottom="32dp"
+		android:paddingTop="32dp"
+		android:textOff="@string/pause_button_text"
+		android:textOn="@string/pause_button_text"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/play_button"
+		app:layout_constraintTop_toBottomOf="@+id/voltage_max_edittext" />
+
+</android.support.constraint.ConstraintLayout>

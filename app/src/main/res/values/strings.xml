@@ -1,0 +1,92 @@
+<resources>
+	<string name="app_name">Arbitrary CV Generator</string>
+
+<!--Controls Fragment Resources-->
+<!--Button Strings-->
+	<string name="scope_view_button_text">Tap Here\nto Draw\nWaveform</string>
+
+	<string name="cv1_button_text">CV1</string>
+	<string name="cv2_button_text">CV2</string>
+
+	<string name="clock_button_text">Clock</string>
+	<string name="bpm_button_text">BPM</string>
+
+	<string name="one_shot_button_text">1-Shot</string>
+	<string name="cycle_button_text">Cycle</string>
+
+	<string name="play_from_start_button_text">FromStart</string>
+	<string name="play_button_text">Play</string>
+	<string name="pause_button_text">Pause</string>
+
+
+<!--TextView Strings-->
+	<string name="time_mode_toggler_label_text">Time Mode</string>
+	<string name="loop_mode_toggler_label_text">Loop Mode</string>
+	<string name="time_input_fields_label_text">Timing Inputs</string>
+	<string name="voltage_input_fields_label_text">Output Range</string>
+	<string name="v_min_max_unit_text">V</string>
+
+
+<!--Hint Strings-->
+	<string name="time_edittext_hint">Duration</string>
+	<string name="voltage_min_edittext_hint">Min (-1.0)</string>
+	<string name="voltage_max_edittext_hint">Max (1.0)</string>
+
+
+<!--Time Unit Spinner String Arrays-->
+	<string-array name="unit_init_array">
+		<item><font fgcolor="#60000000">Unit</font></item>
+	</string-array>
+
+	<string-array name="clock_mode_unit_array">
+		<item>"Milliseconds"</item>
+		<item>"Seconds"</item>
+		<item>"Minutes"</item>
+	</string-array>
+
+	<string-array name="bpm_mode_unit_array">
+		<item>32nd Note Triplet</item>
+		<item>32nd Note</item>
+		<item>Dotted 32nd Note</item>
+		<item>16th Note Triplet</item>
+		<item>16th Note</item>
+		<item>Dotted 16th Note</item>
+		<item>8th Note Triplet</item>
+		<item>8th Note</item>
+		<item>Dotted 8th Note</item>
+		<item>1/4 Note Triplet</item>
+		<item>1/4 Note</item>
+		<item>Dotted 1/4 Note</item>
+		<item>1/2 Note Triplet</item>
+		<item>1/2 Note</item>
+		<item>Dotted 1/2 Note</item>
+		<item>Whole Note Triplet</item>
+		<item>Whole Note</item>
+		<item>Dotted Whole Note</item>
+	</string-array>
+<!--End of Controls Fragment Resources-->
+
+
+<!--Draw In Scope Fragment Resources-->
+<!--Button Strings-->
+	<string name="return_button_text">Return to Parameter Input Screen</string>
+
+
+<!--TextView Strings-->
+	<string name="drawing_instructions_label_text_one_line">
+		Draw CV Waveform Above (X-Axis = Time, Y-Axis = Amplitude)
+	</string>
+	<string name="drawing_instructions_label_text_two_line">
+		Draw CV Waveform Above\n(X-Axis = Time, Y-Axis = Amplitude)
+	</string>
+
+
+
+<!--End of Draw In Scope Fragment Resources-->
+
+<!--Error/Toast Strings-->
+	<string name="no_cv_selected_errmsg">No CV Selected</string>
+
+
+
+</resources>
