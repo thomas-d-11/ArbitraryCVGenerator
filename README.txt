@@ -1,3 +1,4 @@
+# Arbitrary CV Generator
 Android app that lets you draw arbitrary control voltage shapes on screen and outputs them to the headphone out
 
 This app is primarily intended for use with Eurorack-style modular synths. For all output signals, be sure to amplify
@@ -9,3 +10,6 @@ outputs an audio-rate signal whose amplitude envelope matches the desired sub-au
 
 Current State (as of Sept. 30, 2018): Beta. Core functionality is working. Bug where app is outputting in mono, not stereo.
 To be tested whether app layout scales properly to uncommon screen sizes.
+
+# License
+Note that everything in this repo is licensed under the GNU GPLv3.
